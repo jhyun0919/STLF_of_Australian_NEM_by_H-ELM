@@ -51,36 +51,46 @@ def data_splitter(data, ratio=0.8):
     return data[:splitter], data[splitter + 1:]
 
 
-def extract_temperature(df):
-    max_scanner = []
-    mean_scanner = []
-    collector = []
+def extract_feature(df, dataset):
+    temperature_max_scanner = []
+    temperature_mean_scanner = []
+    temperature_collector = []
+
+    powerload_scanner = []
+    powerload_collector = []
+
     for row in xrange(0, len(df)):
         if not math.isnan(df['Max Tem.'][row]) and not math.isnan(df['Mean Tem.'][row]):
-            max_scanner.append(df['Max Tem.'][row])
-            mean_scanner.append(df['Mean Tem.'][row])
-        if len(max_scanner) is concatenate_number:
-            collector.append(normalize(np.array(max_scanner + mean_scanner)))
-            max_scanner.pop(0)
-            mean_scanner.pop(0)
+            temperature_max_scanner.append(df['Max Tem.'][row])
+            temperature_mean_scanner.append(df['Mean Tem.'][row])
 
-    return data_splitter(collector)
+        if len(temperature_max_scanner) is concatenate_number:
+            temperature_collector.append(normalize(np.array(temperature_max_scanner + temperature_mean_scanner)))
+            temperature_max_scanner.pop(0)
+            temperature_mean_scanner.pop(0)
 
-
-def extract_powerload(df):
-    scanner = []
-    collector = []
-    for row in xrange(0, len(df)):
-        if not math.isnan(df['Max Tem.'][row]) and not math.isnan(df['Mean Tem.'][row]):
             for col in xrange(5, 53):
-                scanner.append(df.loc[row][col])
-            collector.append(normalize(np.array(scanner)))
+                powerload_scanner.append(df.loc[row][col])
+            powerload_collector.append(normalize(np.array(powerload_scanner)))
+            del (powerload_scanner[:])
+
+    dataset.Temperature.train, dataset.Temperature.test = data_splitter(np.array(temperature_collector))
+    dataset.PowerLoad.train, dataset.PowerLoad.test = data_splitter(np.array(powerload_collector))
+
 
 if __name__ == '__main__':
     df = pd.read_excel(file, sheetname=QLD)
 
-    temperature_training, temperature_testing = extract_temperature(df)
-    temperature_map = Temperature(temperature_training, temperature_testing)
-    powerload_vector = PowerLoad(extract_powerload(df))
+    dataset = DataSet()
 
-    pickle.dump(temperature_map, open('temperature_map.p', 'wb'))
+    extract_feature(df, dataset)
+
+    print dataset.Temperature.train[0]
+    print dataset.Temperature.train.shape
+    print type(dataset.Temperature.train)
+
+    print dataset.PowerLoad.train[0]
+    print dataset.PowerLoad.train.shape
+    print type(dataset.PowerLoad.train)
+
+    pickle.dump(dataset, open('DataSet.p', 'wb'))

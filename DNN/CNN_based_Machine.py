@@ -37,6 +37,8 @@ def next_batch(temperature_data, power_data, batch_size):
     batch_temperature_data = []
     batch_power_data = []
     for idx in xrange(0, batch_size):
+        if len() is not len():
+            exit()
         batch_temperature_data.append(data[random.randint(0, len(batch_temperature_data))])
         batch_power_data.append(data[random.randint(0, len(batch_power_data))])
     return np.array(batch_temperature_data), np.array(batch_power_data)
