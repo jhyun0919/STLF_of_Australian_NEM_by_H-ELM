@@ -16,23 +16,25 @@ SA = 'Actual_Data_SA'
 TAS = 'Actual_Data_TAS'
 
 
-# Set a Data Class
+# Set Classes as Data Container
 
-class DataSet:
+class Data:
     def __init__(self, train, test):
         self.train = train
         self.test = test
 
 
-class Temperature(DataSet):
-    def __init__(self, train, test):
-        super(self.__class__, self).__init__(train, test)
+class DataSet(object):
+    class Temperature(Data):
+        def __init__(self, train, test):
+            super(self.__class__, self).__init__(train, test)
+
+    class PowerLoad(Data):
+        def __init__(self, train, test):
+            super(self.__class__, self).__init__(train, test)
 
 
-class PowerLoad(DataSet):
-    def __init__(self, train, test):
-        super(self.__class__, self).__init__(train, test)
-
+# Set Functions
 
 def normalize(array):
     return (array - min(array)) / (max(array) - min(array))
@@ -66,8 +68,13 @@ def extract_temperature(df):
 
 
 def extract_powerload(df):
-    pass
-
+    scanner = []
+    collector = []
+    for row in xrange(0, len(df)):
+        if not math.isnan(df['Max Tem.'][row]) and not math.isnan(df['Mean Tem.'][row]):
+            for col in xrange(5, 53):
+                scanner.append(df.loc[row][col])
+            collector.append(normalize(np.array(scanner)))
 
 if __name__ == '__main__':
     df = pd.read_excel(file, sheetname=QLD)
