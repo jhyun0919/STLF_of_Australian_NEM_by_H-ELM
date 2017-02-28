@@ -12,7 +12,7 @@ log_location = '/tmp/power_load_forecast_nn_log'
 # Power Data
 """
 """
-data = pickle.load(open('/Users/JH/Desktop/NTU_Research_1st/temperature_map.p', 'rb'))
+data = pickle.load(open('/Users/JH/Documents/GitHub/PowerForecast/DataSet.p', 'rb'))
 
 # Parameters
 learning_rate = 0.001
@@ -22,7 +22,7 @@ display_step = 10
 concatenate_number = 13
 
 # Network Parameters
-n_input = 48 * concatenate_number  # Power data as input (input matrix shape: 48*concatenate_number)
+n_input = 2 * concatenate_number  # Temperature data as input (input matrix shape: 48*concatenate_number)
 n_output = 48  # Predicted Power data as output  (48-points)
 dropout = 0.75  # Dropout, probability to keep units
 
@@ -33,7 +33,14 @@ keep_prob = tf.placeholder(tf.float32)  # dropout (keep probability)
 
 
 #
-def next_batch(temperature_data, power_data, batch_size):
+def next_batch(dataset, batch_size):
+    """
+    pick data randomly and build next batch for training
+    :param temperature_data:
+    :param power_data:
+    :param batch_size:
+    :return:
+    """
     batch_temperature_data = []
     batch_power_data = []
     for idx in xrange(0, batch_size):
@@ -94,7 +101,7 @@ weights = {
     'wc2': tf.Variable(tf.random_normal([5, 5, 32, 64])),
     # fully connected, 7*7*64 inputs, 1024 outputs
     'wd1': tf.Variable(tf.random_normal([7 * 7 * 64, 1024])),
-    # 1024 inputs, 10 outputs (class prediction)
+    # 1024 inputs, 48 outputs
     'out': tf.Variable(tf.random_normal([1024, n_output]))
 }
 

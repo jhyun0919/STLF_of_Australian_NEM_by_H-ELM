@@ -7,7 +7,7 @@ import cPickle as pickle
 
 file = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
 
-concatenate_number = 13
+concatenate_number = 25
 
 QLD = 'Actual_Data_QLD'
 NSW = 'Actual_Data_NSW'
@@ -44,14 +44,26 @@ def data_splitter(data, ratio=0.8):
     """
     split data into training data & testing data
     :param data:
-    :param ratio: training data ratio
-    :return: train_data, test_data
+
+    :param ratio:
+        training data ratio
+    :return:
+        train_data, test_data
     """
     splitter = int(len(data) * ratio)
     return data[:splitter], data[splitter + 1:]
 
 
 def extract_feature(df, dataset):
+    """
+    assign data to designed data container
+    :param df:
+        pandas data-frame read from excel data format
+    :param dataset:
+        defined data container
+    :return:
+        N/A
+    """
     temperature_max_scanner = []
     temperature_mean_scanner = []
     temperature_collector = []
@@ -86,11 +98,17 @@ if __name__ == '__main__':
     extract_feature(df, dataset)
 
     print dataset.Temperature.train[0]
-    print dataset.Temperature.train.shape
-    print type(dataset.Temperature.train)
+    print dataset.Temperature.train[0].shape # (concatenate_number*2, )
+    print type(dataset.Temperature.train[0]) # numpy.ndarray
+
+    print dataset.Temperature.train.shape # (data-length, concatenate_number*2)
+    print type(dataset.Temperature.train) # numpy.ndarray
 
     print dataset.PowerLoad.train[0]
-    print dataset.PowerLoad.train.shape
-    print type(dataset.PowerLoad.train)
+    print dataset.PowerLoad.train[0].shape # (48, )
+    print type(dataset.PowerLoad.train[0]) # numpy.ndarray
+
+    print dataset.PowerLoad.train.shape # (data-length, 48)
+    print type(dataset.PowerLoad.train) # numpy.ndarray
 
     pickle.dump(dataset, open('DataSet.p', 'wb'))
