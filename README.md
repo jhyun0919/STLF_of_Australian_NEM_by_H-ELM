@@ -23,5 +23,5 @@ Since the concept of machine learning has been rised, there have been efforts to
 
 ### References
 
-[1] Short-term load forecasting of Australian National Electricity Market by an ensemble model of extreme learning machine
+[1] Short-term load forecasting of Australian National Electricity Market by an ensemble model of extreme learning machine  
 [2] Extreme Learning Machine for Multilayer Perceptron, IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 27, NO. 4, APRIL 2016
