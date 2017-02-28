@@ -10,10 +10,12 @@ Since the concept of machine learning has been rised, there have been efforts to
 ### 02. Implemented Structure
 
 #### 1) data pre-processing
-- input
-- ouput
+
 
 #### 2) learning algorithm
+
+- input
+- ouput
 
 ### 03. Test Result
 
