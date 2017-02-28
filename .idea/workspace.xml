@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/DNN/CNN_based_Machine.py" line="47" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temperature_map.p" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DNN/CNN_based_Machine.py" afterPath="$PROJECT_DIR$/DNN/CNN_based_Machine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/Parser.py" />
-    </list>
+    <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="" />
     <ignored path="PowerForecast.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
