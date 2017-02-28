@@ -1,7 +1,7 @@
 # PowerLoad_Forecast
 
 
-<img src="https://raw.githubusercontent.com/jhyun0919/EnergyData/master/docs/images/conceptual_scheme.jpg" alt="Conceptual Scheme pic" style="width: 800px;"/>
+<img src="https://github.com/jhyun0919/PowerLoad_Forecast/blob/master/etc/pic1.jpg?raw=true" alt="Conceptual Scheme pic" style="width: 800px;"/>
 
 ###[Abstract]
 
