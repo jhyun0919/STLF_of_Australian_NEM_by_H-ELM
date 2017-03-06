@@ -105,6 +105,7 @@ if __name__ == '__main__':
     print type(dataset.Temperature.train) # numpy.ndarray
 
     print dataset.PowerLoad.train[0]
+    print dataset.PowerLoad.train[1]
     print dataset.PowerLoad.train[0].shape # (48, )
     print type(dataset.PowerLoad.train[0]) # numpy.ndarray
 
