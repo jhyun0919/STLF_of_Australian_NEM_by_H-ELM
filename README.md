@@ -1,6 +1,6 @@
 # Short-Term Electricity Load Forecasting: A Hierarchical Extreme Learning Machine Approach
 
-#### Jeehyun Park1,2, Yan Xu2, Siqi Bu3 
+#### Jeehyun Park 1,2, Yan Xu 2, Siqi Bu 3 
 
 1 School of Electrical and Electronic Engineering, SungKyunKwan University, Republic of Korea  
 2 School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore  
