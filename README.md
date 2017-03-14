@@ -1,4 +1,11 @@
-# PowerLoad_Forecast
+# Short-Term Electricity Load Forecasting: A Hierarchical Extreme Learning Machine Approach
+
+#### Jeehyun Park1,2, Yan Xu2, Siqi Bu3 
+
+1 School of Electrical and Electronic Engineering, SungKyunKwan University, Republic of Korea  
+2 School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore  
+3 Department of Electrical Engineering, Hong Kong Polytechnic University, Hong Kong  
+
 
 
 <img src="https://github.com/jhyun0919/PowerLoad_Forecast/blob/master/etc/pic2.jpg?raw=true" alt="Conceptual Scheme pic" style="width: 800px;"/>
