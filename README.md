@@ -10,7 +10,7 @@
 
 <img src="https://github.com/jhyun0919/PowerLoad_Forecast/blob/master/etc/pic2.jpg?raw=true" alt="Conceptual Scheme pic" style="width: 800px;"/>
 
-###[Abstract]
+### [Abstract]
 
 Machine learning is an effective approach for short-term electricity load demand forecasting. While accurate load forecasting is pivotal for the economic and secure operation of the power system, there have been continuous efforts to achieve high load forecasting accuracy. There are two main ways to do this: the first is the improvement of the performance of the learning algorithm, and the second is how well the data features are extracted through the pre-processing process.  
 
