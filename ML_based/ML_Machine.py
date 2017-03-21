@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 
+from sklearn.datasets import make_regression
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+
+import math
 import numpy as np
 import pandas as pd
-import math
-import cPickle as pickle
 
 file = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
 
@@ -155,95 +158,27 @@ def data_alloter(df):
 
     return dataset
 
-
-# pickling
-
-def save_object(obj, filename):
-    with open(filename, 'wb') as output:
-        pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
-
-
-"""
-def extract_feature(df, dataset):
-
-    temperature_max_scanner = []
-    temperature_mean_scanner = []
-    temperature_collector = []
-
-    powerload_scanner = []
-    powerload_collector = []
-
-    for row in xrange(0, len(df)):
-        if not math.isnan(df['Max Tem.'][row]) and not math.isnan(df['Mean Tem.'][row]):
-            temperature_max_scanner.append(df['Max Tem.'][row])
-            temperature_mean_scanner.append(df['Mean Tem.'][row])
-
-        if len(temperature_max_scanner) is concatenate_number:
-            temperature_collector.append(normalize(np.array(temperature_max_scanner + temperature_mean_scanner)))
-            temperature_max_scanner.pop(0)
-            temperature_mean_scanner.pop(0)
-
-            for col in xrange(5, 53):
-                powerload_scanner.append(df.loc[row][col])
-            powerload_collector.append(normalize(np.array(powerload_scanner)))
-            del (powerload_scanner[:])
-
-    dataset.Temperature.train, dataset.Temperature.test = data_splitter(np.array(temperature_collector))
-    dataset.PowerLoad.train, dataset.PowerLoad.test = data_splitter(np.array(powerload_collector))
-
-"""
 if __name__ == '__main__':
     df = pd.read_excel(file, sheetname=QLD)
 
     dataset = data_alloter(df)
 
-    print "dataset.Raw.Train.feature"
-    print dataset.Raw.Train.feature
-    print type(dataset.Raw.Train.feature)
-    print dataset.Raw.Train.feature.shape
+    X = dataset.Raw.Train.feature
+    Y = dataset.Raw.Train.target
+
+    print X
+    print type(X)
+    print X.shape
     print
 
-    print "dataset.Raw.Train.feature[0]"
-    print dataset.Raw.Train.feature[0]
-    print type(dataset.Raw.Train.feature[0])
-    print dataset.Raw.Train.feature[0].shape
+    print Y
+    print type(Y)
+    print Y.shape
     print
 
-    print "dataset.Raw.Train.target"
-    print dataset.Raw.Train.target
-    print type(dataset.Raw.Train.target)
-    print dataset.Raw.Train.target.shape
-    print
+    forecast = MultiOutputRegressor(GradientBoostingRegressor(random_state=0)).fit(X, Y)
+    print forecast.predict(X)
 
-    print "dataset.Raw.Train.target[0]"
-    print dataset.Raw.Train.target[0]
-    print type(dataset.Raw.Train.target[0])
-    print dataset.Raw.Train.target[0].shape
-    print
 
-    print "dataset.Raw.Test.feature"
-    print dataset.Raw.Test.feature
-    print type(dataset.Raw.Test.feature)
-    print dataset.Raw.Test.feature.shape
-    print
 
-    print "dataset.Raw.Test.feature[0]"
-    print dataset.Raw.Test.feature[0]
-    print type(dataset.Raw.Test.feature[0])
-    print dataset.Raw.Test.feature[0].shape
-    print
 
-    print "dataset.Raw.Test.target"
-    print dataset.Raw.Test.target
-    print type(dataset.Raw.Test.target)
-    print dataset.Raw.Test.target.shape
-    print
-
-    print "dataset.Raw.Test.target[0]"
-    print dataset.Raw.Test.target[0]
-    print type(dataset.Raw.Test.target[0])
-    print dataset.Raw.Test.target[0].shape
-    print
-
-    # sample usage
-    save_object(dataset, 'dataset.pkl')
