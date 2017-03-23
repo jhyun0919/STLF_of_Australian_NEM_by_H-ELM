@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ML_based/ML_Machine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/.ipynb_checkpoints/DL_Machine-checkpoint.ipynb" afterPath="$PROJECT_DIR$/DL_based/.ipynb_checkpoints/DL_Machine-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" afterPath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/Parser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pre_Process/.ipynb_checkpoints/data pre-process-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Pre_Process/.ipynb_checkpoints/data pre-process-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pre_Process/data pre-process.ipynb" afterPath="$PROJECT_DIR$/Pre_Process/data pre-process.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML_based/ML_Machine.py" afterPath="$PROJECT_DIR$/ML_based/ML_Machine.py" />
     </list>
     <ignored path="PowerForecast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PowerForecast$ML_Machine.coverage" NAME="ML_Machine Coverage Results" MODIFIED="1490105132786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
+    <SUITE FILE_PATH="coverage/PowerForecast$ML_Machine.coverage" NAME="ML_Machine Coverage Results" MODIFIED="1490109874381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
     <SUITE FILE_PATH="coverage/PowerForecast$MNIST.coverage" NAME="MNIST Coverage Results" MODIFIED="1488241935339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DNN" />
     <SUITE FILE_PATH="coverage/PowerForecast$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1490106054078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PowerForecast$temp.coverage" NAME="temp Coverage Results" MODIFIED="1490106450031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
@@ -39,35 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="82" />
+            <state relative-caret-position="270">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="temp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ML_based/temp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ML_Machine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2715">
-              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,9 +72,9 @@
         <option value="$PROJECT_DIR$/AccTester.py" />
         <option value="$PROJECT_DIR$/DL_based/CNN_based_Machine.py" />
         <option value="$PROJECT_DIR$/tensorboard_test.py" />
-        <option value="$PROJECT_DIR$/ML_based/ML_Machine.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
         <option value="$PROJECT_DIR$/ML_based/temp.py" />
+        <option value="$PROJECT_DIR$/ML_based/ML_Machine.py" />
       </list>
     </option>
   </component>
@@ -191,7 +164,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.temp">
+  <component name="RunManager" selected="Python.ML_Machine">
     <configuration default="false" name="Parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -505,9 +478,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Parser" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ML_Machine" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ML_Machine" />
+        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Parser" />
         <item index="3" class="java.lang.String" itemvalue="Python.tensorboard_test" />
         <item index="4" class="java.lang.String" itemvalue="Python.MNIST (1)" />
       </list>
@@ -536,7 +509,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20436187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -544,7 +517,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33972603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -769,26 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="82" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2715">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset.pkl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -802,6 +755,26 @@
         <state relative-caret-position="105">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="210" column="36" lean-forward="true" selection-start-line="210" selection-start-column="36" selection-end-line="210" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

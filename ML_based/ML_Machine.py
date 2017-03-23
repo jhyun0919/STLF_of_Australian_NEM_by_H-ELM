@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from sklearn.datasets import make_regression
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 
@@ -166,18 +165,57 @@ if __name__ == '__main__':
     X = dataset.Raw.Train.feature
     Y = dataset.Raw.Train.target
 
-    print X
-    print type(X)
-    print X.shape
-    print
+    X_test = dataset.Raw.Test.feature
+    X_test_ = dataset.PreProcessed.Test.feature
 
-    print Y
-    print type(Y)
-    print Y.shape
-    print
+    Y_test = dataset.Raw.Test.target
+    Y_test_ = dataset.PreProcessed.Test.target
+
+    # print X
+    # print type(X)
+    # print X.shape
+    # print
+    #
+    # print Y
+    # print type(Y)
+    # print Y.shape
+    # print
 
     forecast = MultiOutputRegressor(GradientBoostingRegressor(random_state=0)).fit(X, Y)
-    print forecast.predict(X)
+    result = forecast.predict(X_test)
+
+    error_sum = 0
+    for i in range(0,len(result)):
+        error =  Y_test[i] - result[i]
+        error_sum = error_sum + sum(error*error)
+    print error_sum
+
+    print
+    X_ = dataset.PreProcessed.Train.feature
+    Y_ = dataset.Raw.Train.target
+
+    # print X_
+    # print type(X_)
+    # print X_.shape
+    # print
+    #
+    # print Y_
+    # print type(Y_)
+    # print Y_.shape
+    # print
+
+    forecast_ = MultiOutputRegressor(GradientBoostingRegressor(random_state=0)).fit(X_, Y_)
+    result_ =  forecast_.predict(X_test_)
+
+    error_sum_ = 0
+    for i in range(0, len(result_)):
+        error_ = Y_test_[i]- result_[i]
+        error_sum_ = error_sum_ + sum(error_ * error_)
+
+    print error_sum_
+
+
+
 
 
 
