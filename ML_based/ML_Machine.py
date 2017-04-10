@@ -2,12 +2,14 @@
 
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import mean_squared_error
 
 import math
+import time
 import numpy as np
 import pandas as pd
 
-file = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
+file_ = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
 
 concatenate_number = 25
 
@@ -109,6 +111,14 @@ def preprocessing_filter(data, nominator, denominator):
 
 
 def preprocessing(data_present, temperature_max, temperature_mean, denominator):
+    """
+    conduct preprocessing last after normalization
+    :param data_present:
+    :param temperature_max:
+    :param temperature_mean:
+    :param denominator:
+    :return:
+    """
     data_present = list(data_present) \
                    + list(preprocessing_filter(np.array(data_present), temperature_max, denominator)) \
                    + list(preprocessing_filter(np.array(data_present), temperature_mean, denominator))
@@ -117,6 +127,26 @@ def preprocessing(data_present, temperature_max, temperature_mean, denominator):
 
 
 def data_alloter(df):
+    """
+    set data into following container format:
+        dataset
+            -Raw
+                -Train
+                    -feature
+                    -target
+                -Test
+                    -feature
+                    -target
+            -Preprocessed
+                -Train
+                    -feature
+                    -target
+                -Test
+                    -feature
+                    -target
+    :param df: data frame parsed from excel data
+    :return: data allocated into the data container
+    """
     dataset = DataSet()
     denominator = df['Mean Tem.'].min()
 
@@ -145,78 +175,93 @@ def data_alloter(df):
                 preprocessed_feature.append(preprocessed_powerload_present)
                 preprocessed_target.append(np.array(powerload_future))
 
-    dataset.Raw.Train.feature, \
-    dataset.Raw.Test.feature = data_splitter(raw_feature)
-    dataset.Raw.Train.target, \
-    dataset.Raw.Test.target = data_splitter(raw_target)
+    dataset.Raw.Train.feature, dataset.Raw.Test.feature = data_splitter(raw_feature)
+    dataset.Raw.Train.target, dataset.Raw.Test.target = data_splitter(raw_target)
 
-    dataset.PreProcessed.Train.feature, \
-    dataset.PreProcessed.Test.feature = data_splitter(preprocessed_feature)
-    dataset.PreProcessed.Train.target, \
-    dataset.PreProcessed.Test.target = data_splitter(preprocessed_target)
+    dataset.PreProcessed.Train.feature, dataset.PreProcessed.Test.feature = data_splitter(preprocessed_feature)
+    dataset.PreProcessed.Train.target, dataset.PreProcessed.Test.target = data_splitter(preprocessed_target)
 
     return dataset
 
-if __name__ == '__main__':
-    df = pd.read_excel(file, sheetname=QLD)
 
+def train_multioutput_regressor(feature, target):
+    """
+
+    :param feature:
+    :param target:
+    :return:
+    """
+    start_train_time = time.time()
+    regressor = MultiOutputRegressor(
+        GradientBoostingRegressor(learning_rate=0.05, max_depth=1, random_state=0, verbose=0, n_estimators=10)).fit(feature, target)
+    end_train_time = time.time()
+
+    print str(regressor)
+    print
+
+    print "TrainingTime = ",
+    print (end_train_time - start_train_time)
+    print
+
+    print "TrainingAccuracy = ",
+    print str(RMSE(regressor.predict(feature), target))
+    print
+
+    return regressor
+
+
+def test_multioutput_regressor(regressor, feature, target):
+    """
+
+    :param regressor:
+    :param feature:
+    :param target:
+    :return:
+    """
+    start_test_time = time.time()
+    predict_result = regressor.predict(feature)
+    end_test_time = time.time()
+
+    print "TestingTime = ",
+    print (end_test_time - start_test_time)
+    print
+
+    print "TestingAccuracy = ",
+    print str(RMSE(predict_result, target))
+    print
+
+
+def RMSE(predict, target):
+    """
+    calculate RMSE and return
+    :param predict: predicted result data
+    :param target: target data
+    :return: RMSE score
+    """
+    error_sum = 0
+    for i in range(0, len(predict)):
+        error = mean_squared_error(predict[i], target[i]) ** 0.5
+        error_sum += error
+    return error_sum / len(predict)
+
+
+def ML_MultiOutputRegression(train_data, test_data):
+    # train regressor
+    regressor = train_multioutput_regressor(train_data.feature, train_data.target)
+
+    # test regressor
+    test_multioutput_regressor(regressor, test_data.feature, test_data.target)
+
+
+if __name__ == '__main__':
+    df = pd.read_excel(file_, sheetname=NSW)
     dataset = data_alloter(df)
 
-    X = dataset.Raw.Train.feature
-    Y = dataset.Raw.Train.target
-
-    X_test = dataset.Raw.Test.feature
-    X_test_ = dataset.PreProcessed.Test.feature
-
-    Y_test = dataset.Raw.Test.target
-    Y_test_ = dataset.PreProcessed.Test.target
-
-    # print X
-    # print type(X)
-    # print X.shape
-    # print
-    #
-    # print Y
-    # print type(Y)
-    # print Y.shape
-    # print
-
-    forecast = MultiOutputRegressor(GradientBoostingRegressor(random_state=0)).fit(X, Y)
-    result = forecast.predict(X_test)
-
-    error_sum = 0
-    for i in range(0,len(result)):
-        error =  Y_test[i] - result[i]
-        error_sum = error_sum + sum(error*error)
-    print error_sum
+    # Raw Data
+    ML_MultiOutputRegression(dataset.Raw.Train, dataset.Raw.Test)
 
     print
-    X_ = dataset.PreProcessed.Train.feature
-    Y_ = dataset.Raw.Train.target
+    print
 
-    # print X_
-    # print type(X_)
-    # print X_.shape
-    # print
-    #
-    # print Y_
-    # print type(Y_)
-    # print Y_.shape
-    # print
-
-    forecast_ = MultiOutputRegressor(GradientBoostingRegressor(random_state=0)).fit(X_, Y_)
-    result_ =  forecast_.predict(X_test_)
-
-    error_sum_ = 0
-    for i in range(0, len(result_)):
-        error_ = Y_test_[i]- result_[i]
-        error_sum_ = error_sum_ + sum(error_ * error_)
-
-    print error_sum_
-
-
-
-
-
-
-
+    # Preprocessed Data
+    ML_MultiOutputRegression(dataset.PreProcessed.Train, dataset.PreProcessed.Test)

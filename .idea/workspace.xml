@@ -2,7 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" afterPath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ELM_based/txt_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AccTester.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/.ipynb_checkpoints/DL_Machine-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489306029.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489306047.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489307845.Jeeui-MBP.ntu.edu.sg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330769.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330806.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330816.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489331300.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489370337.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489370838.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374143.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374228.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374238.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489467212.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477314.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477570.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477584.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482081.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482188.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482212.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484394.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484648.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484774.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489485988.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489491676.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489492016.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489492659.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489493280.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet.p" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/CNN_based-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/tf_practice_testing-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/tf_practice_training-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/CNN_based.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/.ipynb_checkpoints/FileLoad &amp; QueueThread-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/.ipynb_checkpoints/tf_practice_training-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/FileLoad &amp; QueueThread.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/.ipynb_checkpoints/MNIST&amp;TensorBoard-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/MNIST&amp;TensorBoard.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489467200.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489475255.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477054.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477136.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477191.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478102.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478359.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478662.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478981.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489479715.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489479800.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489480293.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489553665.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561337.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561492.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561662.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/summaries/events.out.tfevents.1488979736.Jeeui-MacBook-Pro.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/test1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/test2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/tf_practice_testing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/tf_practice_training.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/.ipynb_checkpoints/ML_Machine-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/ML_Machine.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/temp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pre_Process/.ipynb_checkpoints/data pre-process-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pre_Process/data pre-process.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/PowerLoad.pptx" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/etc/Parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML_based/ML_Machine.py" afterPath="$PROJECT_DIR$/ML_based/ML_Machine.py" />
     </list>
     <ignored path="PowerForecast.iws" />
@@ -16,9 +92,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PowerForecast$ML_Machine.coverage" NAME="ML_Machine Coverage Results" MODIFIED="1490109874381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
-    <SUITE FILE_PATH="coverage/PowerForecast$MNIST.coverage" NAME="MNIST Coverage Results" MODIFIED="1488241935339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DNN" />
+    <SUITE FILE_PATH="coverage/PowerForecast$ParserCSV__1_.coverage" NAME="ParserCSV (1) Coverage Results" MODIFIED="1491794633143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Parser" />
+    <SUITE FILE_PATH="coverage/PowerForecast$txt_parser.coverage" NAME="txt_parser Coverage Results" MODIFIED="1491816955185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ELM_based" />
+    <SUITE FILE_PATH="coverage/PowerForecast$ML_Machine.coverage" NAME="ML_Machine Coverage Results" MODIFIED="1491804889954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
+    <SUITE FILE_PATH="coverage/PowerForecast$MNIST.coverage" NAME="MNIST Coverage Results" MODIFIED="1490858871446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DL_based" />
     <SUITE FILE_PATH="coverage/PowerForecast$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1490106054078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PowerForecast$ParserCSV.coverage" NAME="ParserCSV Coverage Results" MODIFIED="1490785988372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PowerForecast$temp.coverage" NAME="temp Coverage Results" MODIFIED="1490106450031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_based" />
     <SUITE FILE_PATH="coverage/PowerForecast$AccTester.coverage" NAME="AccTester Coverage Results" MODIFIED="1488810782755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PowerForecast$Unittests_in_PowerForecast.coverage" NAME="Unittests in PowerForecast Coverage Results" MODIFIED="1488691225907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -28,19 +107,39 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="PowerForecast" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Parser.py">
+      <file leaf-file-name="txt_parser.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ML_Machine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="195" column="109" lean-forward="false" selection-start-line="195" selection-start-column="109" selection-end-line="195" selection-end-column="109" />
+              <folding>
+                <element signature="e#25#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +173,11 @@
         <option value="$PROJECT_DIR$/tensorboard_test.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
         <option value="$PROJECT_DIR$/ML_based/temp.py" />
+        <option value="$PROJECT_DIR$/Actual_Data_QLD_preprocessed_test.csv" />
+        <option value="$PROJECT_DIR$/ParserCSV.py" />
+        <option value="$PROJECT_DIR$/Parser/ParserCSV.py" />
         <option value="$PROJECT_DIR$/ML_based/ML_Machine.py" />
+        <option value="$PROJECT_DIR$/ELM_based/txt_parser.py" />
       </list>
     </option>
   </component>
@@ -149,6 +252,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ELM_based" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -162,63 +279,15 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.ML_Machine">
-    <configuration default="false" name="Parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PowerForecast" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MNIST (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DL_based" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PowerForecast" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DL_based/MNIST.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tensorboard_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PowerForecast" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorboard_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.txt_parser">
     <configuration default="false" name="ML_Machine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,20 +306,74 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ParserCSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_based" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PowerForecast" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_based/temp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ParserCSV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DL_based" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PowerForecast" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DL_based/MNIST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="txt_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ELM_based" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PowerForecast" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ELM_based/txt_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParserCSV (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PowerForecast" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parser/ParserCSV.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -470,19 +593,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Parser" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MNIST (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tensorboard_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ML_Machine" />
-      <item index="4" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ML_Machine" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ParserCSV" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MNIST" />
+      <item index="3" class="java.lang.String" itemvalue="Python.txt_parser" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ParserCSV (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ML_Machine" />
-        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Parser" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tensorboard_test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MNIST (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.txt_parser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ML_Machine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ParserCSV (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.MNIST" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ParserCSV" />
       </list>
     </recent_temporary>
   </component>
@@ -507,19 +630,28 @@
       <configuration name="Unittests in PowerForecast" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20436187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26817447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5178082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -530,6 +662,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5493151" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22617124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -569,7 +721,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -579,33 +731,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3975">
+          <caret line="265" column="23" lean-forward="true" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="23" />
           <folding>
-            <element signature="e#25#43#0" expanded="true" />
+            <element signature="e#25#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3600">
+          <caret line="240" column="9" lean-forward="true" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
           <folding>
-            <element signature="e#25#43#0" expanded="true" />
+            <element signature="e#25#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="2745">
+          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
+          <folding>
+            <element signature="e#25#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_based/temp.py" />
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
     <entry file="file://$PROJECT_DIR$/DL_based/CNN_based_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -623,23 +832,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="109" selection-end-column="58" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
     <entry file="file://$PROJECT_DIR$/DL_based/CNN_based_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -651,66 +851,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorboard_test.py" />
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="109" selection-end-column="58" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="107" column="36" lean-forward="false" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet.p">
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -718,13 +878,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorboard_test.py" />
-    <entry file="file://$PROJECT_DIR$/AccTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AccTester.py" />
     <entry file="file://$PROJECT_DIR$/DL_based/CNN_based_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -735,43 +889,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DL_based/MNIST.py">
+    <entry file="file://$PROJECT_DIR$/dataset.pkl" />
+    <entry file="file://$PROJECT_DIR$/Actual_Data_QLDraw_train.csv" />
+    <entry file="file://$PROJECT_DIR$/Actual_Data_QLD_raw_train.csv" />
+    <entry file="file://$PROJECT_DIR$/DataSet.p" />
+    <entry file="file://$PROJECT_DIR$/Actual_Data_QLD_preprocessed_test.csv" />
+    <entry file="file://$PROJECT_DIR$/Actual_Data_QLD_preprocessed_train.csv" />
+    <entry file="file://$PROJECT_DIR$/Actual_Data_QLD_raw_test.csv" />
+    <entry file="file://$PROJECT_DIR$/etc/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="120" column="62" lean-forward="false" selection-start-line="120" selection-start-column="62" selection-end-line="120" selection-end-column="62" />
+        <state relative-caret-position="15">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="197" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset.pkl">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML_based/temp.py">
+    <entry file="file://$PROJECT_DIR$/ParserCSV.py" />
+    <entry file="file://$PROJECT_DIR$/ML_based/temp.py" />
+    <entry file="file://$USER_HOME$/Desktop/MLwithTF-master/book_code/chapter_04/ann_benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="225">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DL_based/MNIST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ELM_based/elm_ouput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/ParserCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="210" column="36" lean-forward="true" selection-start-line="210" selection-start-column="36" selection-end-line="210" selection-end-column="36" />
+        <state relative-caret-position="73">
+          <caret line="195" column="109" lean-forward="false" selection-start-line="195" selection-start-column="109" selection-end-line="195" selection-end-column="109" />
           <folding>
             <element signature="e#25#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
