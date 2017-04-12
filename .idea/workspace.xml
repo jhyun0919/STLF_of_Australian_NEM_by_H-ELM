@@ -2,84 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ELM_based/txt_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AccTester.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/.ipynb_checkpoints/DL_Machine-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/DL_Machine.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489306029.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489306047.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489307845.Jeeui-MBP.ntu.edu.sg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330769.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330806.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489330816.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489331300.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489370337.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489370838.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374143.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374228.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489374238.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489467212.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477314.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477570.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489477584.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482081.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482188.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489482212.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484394.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484648.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489484774.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489485988.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489491676.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489492016.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489492659.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DL_based/summary/events.out.tfevents.1489493280.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataSet.p" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/CNN_based-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/tf_practice_testing-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/.ipynb_checkpoints/tf_practice_training-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/CNN_based.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/.ipynb_checkpoints/FileLoad &amp; QueueThread-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/.ipynb_checkpoints/tf_practice_training-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/FileLoad &amp; QueueThread.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/checkpoint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/.ipynb_checkpoints/MNIST&amp;TensorBoard-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/MNIST&amp;TensorBoard.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/checkpoint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489467200.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489475255.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477054.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477136.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489477191.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478102.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478359.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478662.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489478981.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489479715.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489479800.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489480293.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489553665.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561337.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561492.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/summary/events.out.tfevents.1489561662.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/mnist/tensorflow.ckpt.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/summaries/events.out.tfevents.1488979736.Jeeui-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/test1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/test2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/tf_practice_testing.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Jupyter/practice/tf_practice_training.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/.ipynb_checkpoints/ML_Machine-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/ML_Machine.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_based/temp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pre_Process/.ipynb_checkpoints/data pre-process-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pre_Process/data pre-process.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/PowerLoad.pptx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/etc/Parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PowerForecast.iml" afterPath="$PROJECT_DIR$/.idea/PowerForecast.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML_based/ML_Machine.py" afterPath="$PROJECT_DIR$/ML_based/ML_Machine.py" />
     </list>
     <ignored path="PowerForecast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
               </folding>
@@ -136,7 +61,7 @@
       <file leaf-file-name="ML_Machine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
+            <state relative-caret-position="2820">
               <caret line="195" column="109" lean-forward="false" selection-start-line="195" selection-start-column="109" selection-end-line="195" selection-end-column="109" />
               <folding>
                 <element signature="e#25#77#0" expanded="true" />
@@ -273,7 +198,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -643,24 +567,24 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26817447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5178082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5178082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -721,6 +645,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="195" column="109" lean-forward="false" selection-start-line="195" selection-start-column="109" selection-end-line="195" selection-end-column="109" />
+          <folding>
+            <element signature="e#25#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -937,13 +881,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ML_based/ML_Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
+        <state relative-caret-position="2820">
           <caret line="195" column="109" lean-forward="false" selection-start-line="195" selection-start-column="109" selection-end-line="195" selection-end-column="109" />
           <folding>
             <element signature="e#25#77#0" expanded="true" />
@@ -954,7 +897,7 @@
     <entry file="file://$PROJECT_DIR$/ELM_based/txt_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
