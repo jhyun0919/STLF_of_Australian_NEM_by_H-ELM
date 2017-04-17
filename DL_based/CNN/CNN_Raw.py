@@ -7,7 +7,7 @@ import cPickle as pickle
 from data_parser import data_alloter
 
 file_directory = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
-logs_path = './tensorflow_logs/cnn_machine'
+logs_path = './tensorflow_logs/cnn_raw_'
 test_result_directory = './cnn_raw_result.bin'
 
 QLD = 'Actual_Data_QLD'
@@ -19,7 +19,7 @@ TAS = 'Actual_Data_TAS'
 # Parameters
 num_steps = 3000
 data_showing_step = 100
-batch_size = 30
+batch_size = 20
 
 # Network Parameters
 n_input = 50  # feature data as input (input matrix shape: ???)
@@ -183,6 +183,8 @@ def run_graph(data_set):
     print "Run the command line:\n" \
           "--> tensorboard --logdir=./tensorflow_logs " \
           "\nThen open http://0.0.0.0:6006/ into your web browser"
+
+    return err_test
 
 
 def test_result_recorder(data_set, n_simulatations):
