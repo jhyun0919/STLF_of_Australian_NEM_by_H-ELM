@@ -8,7 +8,7 @@ import cPickle as pickle
 from data_parser import data_alloter
 
 file_directory = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
-logs_path = './tensorflow_logs/lstm'
+logs_path = './tensorflow_logs/lstm_raw'
 test_result_directory = './rnn_raw_result.bin'
 
 QLD = 'Actual_Data_QLD'
@@ -162,6 +162,6 @@ if __name__ == "__main__":
     df = pd.read_excel(file_directory, sheetname=QLD)
     data_set = data_alloter(df)
 
-    n_simulations = 3
+    n_simulations = 1000
 
     test_result_recorder(data_set, n_simulations)

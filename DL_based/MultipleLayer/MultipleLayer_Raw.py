@@ -7,7 +7,7 @@ import cPickle as pickle
 from data_parser import data_alloter
 
 file_directory = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
-logs_path = './tensorflow_logs/3_layers'
+logs_path = './tensorflow_logs/multiple_raw'
 test_result_directory = './multiple_raw_result.bin'
 
 QLD = 'Actual_Data_QLD'
@@ -147,6 +147,8 @@ def run_graph(data_set):
           "--> tensorboard --logdir=./tensorflow_logs " \
           "\nThen open http://0.0.0.0:6006/ into your web browser"
 
+    return err_test
+
 
 def test_result_recorder(data_set, n_simulatations):
     result = list()
@@ -166,6 +168,6 @@ if __name__ == "__main__":
     df = pd.read_excel(file_directory, sheetname=QLD)
     data_set = data_alloter(df)
 
-    n_simulations = 3
+    n_simulations = 1000
 
     test_result_recorder(data_set, n_simulations)

@@ -7,8 +7,8 @@ import cPickle as pickle
 from data_parser import data_alloter
 
 file_directory = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
-logs_path = './tensorflow_logs/cnn_machine'
-test_result_directory = './cnn_prerpecessed_result.bin'
+logs_path = './tensorflow_logs/cnn_preprocessed'
+test_result_directory = './cnn_preprocessed_result.bin'
 
 QLD = 'Actual_Data_QLD'
 NSW = 'Actual_Data_NSW'
@@ -50,7 +50,7 @@ def maxpool2d(x, k=2):
 def conv_net(x, weights, biases, dropout):
     # Reshape input picture
     with tf.name_scope('array_reshape') as array_reshape:
-        x = tf.reshape(x, shape=[-1, 6, 8, 1])
+        x = tf.reshape(x, shape=[-1, 12, 12, 1])
 
     # Convolution Layer
     with tf.name_scope('conv_layer1') as conv_layer1:
@@ -184,6 +184,8 @@ def run_graph(data_set):
     print "Run the command line:\n" \
           "--> tensorboard --logdir=./tensorflow_logs " \
           "\nThen open http://0.0.0.0:6006/ into your web browser"
+
+    return err_test
 
 
 def test_result_recorder(data_set, n_simulatations):
