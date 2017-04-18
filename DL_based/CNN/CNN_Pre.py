@@ -133,7 +133,7 @@ def run_graph(data_set):
     sess.run(init)
 
     # op to write logs to Tensorboard
-    summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
+#summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
     # Training cycle
     for step in range(num_steps):
@@ -167,8 +167,8 @@ def run_graph(data_set):
         err_test, summary_test = sess.run([rmse, merged_summary_op],
                                           feed_dict={x: batch_test_x, y: batch_test_y, keep_prob: 1.})
 
-        summary_writer.add_summary(summary_train, step)
-        summary_writer.add_summary(summary_test, step)
+#summary_writer.add_summary(summary_train, step)
+#summary_writer.add_summary(summary_test, step)
 
         # Compute average loss
         avg_cost += c / total_batch
@@ -206,6 +206,6 @@ if __name__ == "__main__":
     df = pd.read_excel(file_directory, sheetname=QLD)
     data_set = data_alloter(df)
 
-    n_simulations = 3
+    n_simulations = 300
 
     test_result_recorder(data_set, n_simulations)
