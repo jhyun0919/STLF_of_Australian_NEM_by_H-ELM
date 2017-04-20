@@ -81,3 +81,4 @@ TestingAccuracy=sqrt(mse(test_y' - predict_yy));            %   Calculate testin
 disp('Testing has been finished!');
 disp(['The Total Testing Time is : ', num2str(Testing_time), ' seconds' ]);
 disp(['Testing Accuracy is : ', num2str(TestingAccuracy)]);
+fprintf('\n');
