@@ -17,7 +17,7 @@ SA = 'Actual_Data_SA'
 TAS = 'Actual_Data_TAS'
 
 # Parameters
-num_steps = 3000
+num_steps = 2000
 data_showing_step = 100
 batch_size = 30
 
@@ -88,16 +88,16 @@ weights = {
     'wc2': tf.Variable(tf.truncated_normal([3, 3, 32, 64]), name='wc2'),
 
     # fully connected 1, width*height*64 inputs, ___ outputs
-    'wd1': tf.Variable(tf.truncated_normal([3 * 3 * 64, 64 * 6]), name='wd1'),
+    'wd1': tf.Variable(tf.truncated_normal([3 * 3 * 64, 64 * 12]), name='wd1'),
 
     # ___ inputs, 48 outputs
-    'out': tf.Variable(tf.truncated_normal([64 * 6, n_output]), name='wo1')
+    'out': tf.Variable(tf.truncated_normal([64 * 12, n_output]), name='wo1')
 }
 
 biases = {
     'bc1': tf.Variable(tf.truncated_normal([32]), name='bc1'),
     'bc2': tf.Variable(tf.truncated_normal([64]), name='bc2'),
-    'bd1': tf.Variable(tf.truncated_normal([64 * 6]), name='bd1'),
+    'bd1': tf.Variable(tf.truncated_normal([64 * 12]), name='bd1'),
     'out': tf.Variable(tf.truncated_normal([n_output]), name='bo1')
 }
 
@@ -133,7 +133,7 @@ def run_graph(data_set):
     sess.run(init)
 
     # op to write logs to Tensorboard
-#summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
+    # summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
     # Training cycle
     for step in range(num_steps):
@@ -167,8 +167,8 @@ def run_graph(data_set):
         err_test, summary_test = sess.run([rmse, merged_summary_op],
                                           feed_dict={x: batch_test_x, y: batch_test_y, keep_prob: 1.})
 
-#summary_writer.add_summary(summary_train, step)
-#summary_writer.add_summary(summary_test, step)
+        # summary_writer.add_summary(summary_train, step)
+        # summary_writer.add_summary(summary_test, step)
 
         # Compute average loss
         avg_cost += c / total_batch
@@ -206,6 +206,6 @@ if __name__ == "__main__":
     df = pd.read_excel(file_directory, sheetname=QLD)
     data_set = data_alloter(df)
 
-    n_simulations = 400
+    n_simulations = 300
 
     test_result_recorder(data_set, n_simulations)
