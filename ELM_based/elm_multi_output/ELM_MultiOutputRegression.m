@@ -29,7 +29,7 @@ function [TrainingTime, TestingTime, TrainingAccuracy, TestingAccuracy] = elm_Mu
     %%%%    DATE:       APRIL 2004
 
 
-disp(['NumberofHiddenNeurons = ', num2str(NumberofHiddenNeurons)]);
+disp(['Number of HiddenNeurons = ', num2str(NumberofHiddenNeurons)]);
 
 %%%%%%%%%%% Load training dataset
 train_data=csvread(TrainingData_File);
