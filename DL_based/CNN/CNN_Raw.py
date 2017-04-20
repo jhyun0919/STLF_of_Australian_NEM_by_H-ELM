@@ -177,12 +177,12 @@ def run_graph(data_set):
                 "rmse_train=", "{:.9f}".format(err_train), \
                 "rmse_test=", "{:.9f}".format(err_test)
 
-    print "Optimization Finished!"
+    print "  Optimization Finished!"
     print
 
-    print "Run the command line:\n" \
-          "--> tensorboard --logdir=./tensorflow_logs " \
-          "\nThen open http://0.0.0.0:6006/ into your web browser"
+    print "  Run the command line:\n" \
+          "  --> tensorboard --logdir=./tensorflow_logs \n" \
+          "  Then open http://0.0.0.0:6006/ into your web browser"
 
     return err_test
 

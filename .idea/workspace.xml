@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/CNN/.ipynb_checkpoints/TestAccDistribution_CNN-checkpoint.ipynb" afterPath="$PROJECT_DIR$/DL_based/CNN/.ipynb_checkpoints/TestAccDistribution_CNN-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py" afterPath="$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/CNN/TestAccDistribution_CNN.ipynb" afterPath="$PROJECT_DIR$/DL_based/CNN/TestAccDistribution_CNN.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py" afterPath="$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py" />
     </list>
     <ignored path="PowerForecast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,18 +63,46 @@
     <favorites_list name="PowerForecast" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CNN_Raw.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="174" column="24" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="CNN_Pre.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="180" column="13" lean-forward="false" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CNN_Raw.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="184" column="13" lean-forward="false" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="RNN_Pre.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DL_based/RNN/RNN_Pre.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,11 +146,11 @@
         <option value="$PROJECT_DIR$/DL_based/SingleLayer/data_parser.py" />
         <option value="$PROJECT_DIR$/DL_based/SingleLayer/SingleLayer_Raw.py" />
         <option value="$PROJECT_DIR$/DL_based/MultipleLayer/MultipleLayer_Raw.py" />
-        <option value="$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py" />
         <option value="$PROJECT_DIR$/DL_based/RNN/RNN_Raw.py" />
         <option value="$PROJECT_DIR$/DL_based/SingleLayer/SingleLayer_Pre.py" />
         <option value="$PROJECT_DIR$/DL_based/MultipleLayer/MultipleLayer_Pre.py" />
         <option value="$PROJECT_DIR$/DL_based/RNN/RNN_Pre.py" />
+        <option value="$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py" />
         <option value="$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py" />
       </list>
     </option>
@@ -254,6 +281,10 @@
               <option name="myItemId" value="DL_based" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SingleLayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -270,6 +301,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RNN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DL_based" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PowerForecast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DL_based" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,7 +745,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22051696" sideWeight="0.49183673" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22051696" sideWeight="0.49183673" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -921,13 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DL_based/RNN/RNN_Raw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="164" column="24" lean-forward="false" selection-start-line="164" selection-start-column="24" selection-end-line="164" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DL_based/SingleLayer/SingleLayer_Raw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -951,23 +1007,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DL_based/RNN/RNN_Pre.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="190">
+          <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py">
+    <entry file="file://$PROJECT_DIR$/DL_based/RNN/RNN_Raw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="208" column="23" lean-forward="false" selection-start-line="208" selection-start-column="23" selection-end-line="208" selection-end-column="23" />
+        <state relative-caret-position="615">
+          <caret line="164" column="24" lean-forward="false" selection-start-line="164" selection-start-column="24" selection-end-line="164" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Raw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="174" column="24" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+        <state relative-caret-position="425">
+          <caret line="184" column="13" lean-forward="false" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DL_based/CNN/CNN_Pre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="180" column="13" lean-forward="false" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
           <folding />
         </state>
       </provider>
