@@ -206,6 +206,6 @@ if __name__ == "__main__":
     df = pd.read_excel(file_directory, sheetname=QLD)
     data_set = data_alloter(df)
 
-    n_simulations = 300
+    n_simulations = 400
 
     test_result_recorder(data_set, n_simulations)
