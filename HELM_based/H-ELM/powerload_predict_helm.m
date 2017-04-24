@@ -7,7 +7,7 @@ N3=50;
 N4=50;
 N=N4+1;
 
-%rand('state',78309924);
+%rand('state',783);
 b1=2*rand(size(train_x',2)+1,N1)-1;
 b2=2*rand(N1+1,N2)-1;
 b3=2*rand(N2+1,N3)-1;
