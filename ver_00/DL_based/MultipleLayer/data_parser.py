@@ -95,9 +95,9 @@ def preprocessing_filter(data, nominator, denominator):
 
 
 def preprocessing(data_present, temperature_max, temperature_mean, denominator):
-    data_present = list(data_present) + list(
-        preprocessing_filter(np.array(data_present), temperature_max, denominator)) + list(
-        preprocessing_filter(np.array(data_present), temperature_mean, denominator))
+    data_present = list(data_present) + \
+                   list(preprocessing_filter(np.array(data_present), temperature_max, denominator)) + \
+                   list(preprocessing_filter(np.array(data_present), temperature_mean, denominator))
 
     return np.array(data_present)
 
