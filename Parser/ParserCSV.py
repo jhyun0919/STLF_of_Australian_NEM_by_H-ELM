@@ -3,7 +3,6 @@
 import numpy as np
 import pandas as pd
 import math
-import csv
 
 file = '/Users/JH/Desktop/NTU/NTU_Research/data/NEM_Load_Forecasting_Database.xls'
 
