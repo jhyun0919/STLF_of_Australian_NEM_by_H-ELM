@@ -3,16 +3,27 @@
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
+from datetime import date
+from datetime import timedelta
 
-load_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_01/data/NSW/load/NSW_NSLP_VICAGL_2006_2015.csv'
+load_files = ['/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2006.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2007.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2008.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2009.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2010.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2011.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2012.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2013.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2014.csv',
+              '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/load/NSW_nslp2015.csv']
 
-temperature_max_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_01/data/NSW/weather/NSW_temp_max_2006_2015.csv'
-temperature_min_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_01/data/NSW/weather/NSW_temp_min_2006_2015.csv'
-rainfall_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_01/data/NSW/weather/NSW_rainfall_2006_2015.csv'
-solar_expose_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_01/data/NSW/weather/NSW_solar_2006_2015.csv'
+load_areas = ['ACTEWAGL', 'CITIPOWER', 'COUNTRYENERGY', 'ENERGYAUST', 'INTEGRAL', 'POWERCOR', 'TXU', 'UMPLP', 'UNITED',
+              'VICAGL']
 
-CONV = 613
-OUTER = 919
+temperature_max_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/weather/NSW_temp_max_2006_2015.csv'
+temperature_min_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/weather/NSW_temp_min_2006_2015.csv'
+rainfall_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/weather/NSW_rainfall_2006_2015.csv'
+solar_expose_file = '/Users/JH/Documents/GitHub/PowerForecast/ver_03/data/weather/NSW_solar_2006_2015.csv'
 
 
 # Set Functions
@@ -20,20 +31,6 @@ OUTER = 919
 class Preprocess:
     def __init__(self):
         pass
-
-    @staticmethod
-    def data_splitter(data, ratio=0.8):
-        """
-        split data vector into training data & testing data
-        :param data:
-            data vector
-        :param ratio:
-            training data ratio
-        :return:
-            training_data vector, testing_data vector
-        """
-        splitter = int(len(data) * ratio)
-        return np.array(data[:splitter]), np.array(data[splitter + 1:])
 
     @staticmethod
     def interpolation(data):
@@ -105,26 +102,18 @@ class Preprocess:
         return np.transpose(np.vstack((np.vstack((np.vstack((temp_max, temp_min)), rainfall)), solar)))
 
     @staticmethod
-    def filter_convolution(vector_0, vector_1):
+    def data_splitter(data, ratio=0.8):
         """
-        exaggerate data with convolution
-        :param vector_0: 
-        :param vector_1: 
-        :return: 
+        split data vector into training data & testing data
+        :param data:
+            data vector
+        :param ratio:
+            training data ratio
+        :return:
+            training_data vector, testing_data vector
         """
-        # print vector_0.shape
-        # print vector_1.shape
-        return np.convolve(vector_0, vector_1)
-
-    @staticmethod
-    def filter_outer_product(vector_0, vector_1):
-        """
-        exaggerate data with outer product
-        :param vector_0: 
-        :param vector_1: 
-        :return: 
-        """
-        return np.ravel(np.outer(vector_0, vector_1))
+        splitter = int(len(data) * ratio)
+        return np.array(data[:splitter]), np.array(data[splitter + 1:])
 
 
 class ReadCSV:
@@ -132,14 +121,28 @@ class ReadCSV:
         pass
 
     @staticmethod
-    def laod(csv_file=load_file):
+    def load(csv_files=load_files):
+        load_data = dict()
+
+        for file_num in xrange(0, len(csv_files)):
+            df = pd.read_csv(csv_files[file_num])
+            for area_num in xrange(0, len(load_areas)):
+                temp_load = (df.loc[df['ProfileArea'] == load_areas[area_num]]).ix[:, 4:52]
+                if file_num == 0:
+                    load_data[load_areas[area_num]] = np.array(temp_load)
+                else:
+                    load_data[load_areas[area_num]] = np.vstack((load_data[load_areas[area_num]], temp_load))
+
+        return load_data
+
+    @staticmethod
+    def weather():
         """
-        read csv file about load data and return as a numpy array
-        :param csv_file: 
+        build train and test vector of weather data
         :return: 
-            (3652, 48)
         """
-        return (pd.read_csv(csv_file)).values[:, 4:-1]
+        return Preprocess.integrate_weather_data(ReadCSV.temp_max(), ReadCSV.temp_min(), ReadCSV.rainfall(),
+                                                 ReadCSV.solar())
 
     @staticmethod
     def temp_max(csv_file=temperature_max_file):
@@ -181,172 +184,60 @@ class ReadCSV:
         """
         return (pd.read_csv(csv_file)).values[:, 5]
 
-    @staticmethod
-    def load_data():
-        """
-        build train and test vector of load data
-        :return: 
-        """
-        return Preprocess.data_splitter(Preprocess.normalization_load_data(ReadCSV.laod()))
+
+class Numpy2Pandas:
+    def __init__(self):
+        pass
 
     @staticmethod
-    def weather_data():
-        """
-        build train and test vector of weather data
-        :return: 
-        """
-        return Preprocess.data_splitter((Preprocess.integrate_weather_data(
-            Preprocess.normalization_weather_data(ReadCSV.temp_max()),
-            Preprocess.normalization_weather_data(ReadCSV.temp_min()),
-            Preprocess.normalization_weather_data(ReadCSV.rainfall()),
-            Preprocess.normalization_weather_data(ReadCSV.solar()))))
+    def set_date_list(start_date, date_list_length):
+        date_list = list()
+        present_date = start_date
+        for idx in xrange(0, date_list_length):
+            date_list.append(present_date)
+            present_date = present_date + timedelta(days=1)
+        return np.array(date_list)
+
+    @staticmethod
+    def add_date_index(data):
+        start_date = date(2006, 1, 1)
+        if type(data) is dict:
+            area_names = sorted(data.iterkeys())
+            for idx in xrange(0, len(area_names)):
+                date_list = Numpy2Pandas.set_date_list(start_date, len(data[area_names[idx]]))
+                data[area_names[idx]] = data[area_names[idx]].set_index(date_list)
+        else:
+            date_list = Numpy2Pandas.set_date_list(start_date, len(data))
+            data = data.set_index(date_list)
+
+        return data
+
+    @staticmethod
+    def load_data2df(load_data):
+        data_dictionary = dict()
+        area_names = sorted(load_data.iterkeys())
+        for area_num in xrange(0, len(area_names)):
+            temp_dictionary = dict()
+            for idx in xrange(0, 48):
+                key_name = idx + 1
+                temp_dictionary[key_name] = load_data[area_names[area_num]][:, idx]
+            data_dictionary[area_names[area_num]] = pd.DataFrame(temp_dictionary)
+        return Numpy2Pandas.add_date_index(data_dictionary)
+
+    @staticmethod
+    def weather_data2df(weather_data):
+        data_dictionary = dict()
+        weather_key = ['Temperature_Max', 'Temperature_min', 'Rain_fall', 'Solar_exposure']
+        for idx in xrange(0, 4):
+            data_dictionary[weather_key[idx]] = weather_data[:, idx]
+        data_dictionary = pd.DataFrame(data_dictionary)
+
+        return Numpy2Pandas.add_date_index(data_dictionary)
 
 
 class DataAllocate:
     def __init__(self):
         pass
-
-    @staticmethod
-    def type_d(day_series_len):
-        train_load, test_load = ReadCSV.load_data()
-        train_weather, test_weather = ReadCSV.weather_data()
-
-        combine_type = 'd' + str(day_series_len)
-        SaveData.elm_based(DataAllocate.combine_d(train_load, train_weather, day_series_len), 'train', combine_type)
-        SaveData.elm_based(DataAllocate.combine_d(test_load, test_weather, day_series_len), 'test', combine_type)
-
-    @staticmethod
-    def combine_d(load, weather, day_series_len):
-        input_vector = list()
-        if len(load) == len(weather):
-            for row in xrange(0, len(load) - day_series_len + 1):
-                if day_series_len == 1:
-                    input_vector.append(np.append(load[row], weather[row]))
-                elif day_series_len == 2:
-                    input_vector.append(np.append(np.append(load[row], weather[row]), weather[row + 1]))
-                elif day_series_len == 3:
-                    input_vector.append(
-                        np.append(np.append(np.append(load[row], weather[row]), weather[row + 1]), weather[row + 2]))
-        else:
-            print 'error in combine_d'
-        return np.array(input_vector)
-
-    @staticmethod
-    def type_w(week_series_len):
-        train_load, test_load = ReadCSV.load_data()
-        train_weather, test_weather = ReadCSV.weather_data()
-
-        combine_type = 'w' + str(week_series_len)
-        SaveData.elm_based(DataAllocate.combine_w(train_load, train_weather, week_series_len), 'train', combine_type)
-        SaveData.elm_based(DataAllocate.combine_w(test_load, test_weather, week_series_len), 'test', combine_type)
-
-    @staticmethod
-    def combine_w(load, weather, week_series_len):
-        input_vector = list()
-        day_series_len = week_series_len * 7
-        if len(load) == len(weather):
-            for row in xrange(0, len(load) - day_series_len + 1):
-                if week_series_len == 1:
-                    input_vector.append(np.append(load[row], weather[row]))
-                elif week_series_len == 2:
-                    input_vector.append(np.append(np.append(load[row], weather[row]), weather[row + 7]))
-                elif week_series_len == 3:
-                    input_vector.append(
-                        np.append(np.append(np.append(load[row], weather[row]), weather[row + 7]), weather[row + 14]))
-        else:
-            print 'error in combine_w'
-        return np.array(input_vector)
-
-    @staticmethod
-    def type_dw(day_series_len, week_series_len):
-        train_load, test_load = ReadCSV.load_data()
-        train_weather, test_weather = ReadCSV.weather_data()
-
-        combine_type = 'd' + str(day_series_len) + 'w' + str(week_series_len)
-        SaveData.elm_based(DataAllocate.combine_dw(train_load, train_weather, day_series_len, week_series_len), 'train',
-                           combine_type)
-        SaveData.elm_based(DataAllocate.combine_dw(test_load, test_weather, day_series_len, week_series_len), 'test',
-                           combine_type)
-
-    @staticmethod
-    def combine_dw(load, weather, day_series_len, week_series_len):
-        input_vector = list()
-        if len(load) == len(weather):
-            for row in xrange(0, len(load) - week_series_len * 7 + 1):
-                day_vector = list()
-                week_vector = list()
-
-                if week_series_len == 1:
-                    week_vector.append(weather[row])
-                elif week_series_len == 2:
-                    week_vector.append(np.append(weather[row], weather[row + 7]))
-                elif week_series_len == 3:
-                    week_vector.append(
-                        np.append(np.append(weather[row], weather[row + 7]), weather[row + 14]))
-
-                if day_series_len == 1:
-                    day_vector.append(weather[row])
-                elif day_series_len == 2:
-                    day_vector.append(np.append(weather[row], weather[row + 1]))
-                elif day_series_len == 3:
-                    day_vector.append(
-                        np.append(np.append(weather[row], weather[row + 1]), weather[row + 2]))
-
-                input_vector.append(np.append(load[row], np.append(np.array(day_vector), np.array(week_vector))))
-
-        else:
-            print 'error in combine_dw'
-        return np.array(input_vector)
-
-    @staticmethod
-    def type_dw_exag(day_series_len, week_series_len, filter_type):
-        train_load, test_load = ReadCSV.load_data()
-        train_weather, test_weather = ReadCSV.weather_data()
-
-        combine_type = 'd' + str(day_series_len) + 'w' + str(week_series_len)
-        SaveData.elm_based(
-            DataAllocate.combine_dw_exag(train_load, train_weather, day_series_len, week_series_len, filter_type),
-            'train',
-            combine_type,
-            filter_type)
-        SaveData.elm_based(
-            DataAllocate.combine_dw_exag(test_load, test_weather, day_series_len, week_series_len, filter_type),
-            'test',
-            combine_type,
-            filter_type)
-
-    @staticmethod
-    def combine_dw_exag(load, weather, day_series_len, week_series_len, filter_type):
-        input_vector = list()
-        if len(load) == len(weather):
-            for row in xrange(0, len(load) - week_series_len * 7 + 1):
-                day_vector = list()
-                week_vector = list()
-
-                if week_series_len == 1:
-                    week_vector.append(weather[row])
-                elif week_series_len == 2:
-                    week_vector.append(np.append(weather[row], weather[row + 7]))
-                elif week_series_len == 3:
-                    week_vector.append(
-                        np.append(np.append(weather[row], weather[row + 7]), weather[row + 14]))
-
-                if day_series_len == 1:
-                    day_vector.append(weather[row])
-                elif day_series_len == 2:
-                    day_vector.append(np.append(weather[row], weather[row + 1]))
-                elif day_series_len == 3:
-                    day_vector.append(
-                        np.append(np.append(weather[row], weather[row + 1]), weather[row + 2]))
-
-                if filter_type == CONV:
-                    input_vector.append(np.append(load[row], Preprocess.filter_convolution(day_vector, week_vector)))
-                elif filter_type == OUTER:
-                    input_vector.append(np.append(load[row], Preprocess.filter_outer_product(np.array(day_vector),
-                                                                                             np.array(week_vector))))
-        else:
-            print 'error in combine_dw_exag'
-        return np.array(input_vector)
 
 
 class SaveData:
@@ -358,18 +249,7 @@ class SaveData:
         if filter_type is None:
             with open('elm_' + data_type + '_' + combine_type + '_data.csv', 'w') as csv_file:
                 np.savetxt(csv_file, np.array(data_vector), delimiter=",")
-        elif filter_type == CONV:
-            with open('elm_' + data_type + '_' + combine_type + 'conv' + '_data.csv', 'w') as csv_file:
-                np.savetxt(csv_file, np.array(data_vector), delimiter=",")
-        elif filter_type == OUTER:
-            with open('elm_' + data_type + '_' + combine_type + 'outer' + '_data.csv', 'w') as csv_file:
-                np.savetxt(csv_file, np.array(data_vector), delimiter=",")
 
 
 if __name__ == '__main__':
-    DataAllocate.type_dw_exag(1, 1, CONV)
-    DataAllocate.type_dw_exag(2, 2, CONV)
-    DataAllocate.type_dw_exag(3, 3, CONV)
-    # DataAllocate.type_dw_exag(1, 1, OUTER)
-    # DataAllocate.type_dw_exag(2, 2, OUTER)
-    # DataAllocate.type_dw_exag(3, 3, OUTER)
+    pass
