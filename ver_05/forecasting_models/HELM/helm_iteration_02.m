@@ -6,10 +6,8 @@ load 'input_data/ACTEWAGL/helm_input_wd.mat';Result_File='forecast_result/ACTEWA
 
 
 N1=NumberofHiddenNeurons;
-N2=70;
+N2=100;
 N=N2+1;
-
-RMSE_List = [];
 
 for x = 1:1000
 x    
@@ -22,11 +20,12 @@ fprintf(1,'N1= %d\n',N1);
 fprintf(1,'N2= %d\n',N2);
 fprintf(1,'N= %d\n',N);
 
-[TrainingAccuracy,TestingAccuracy_RMSE,Training_time,Testing_time] = helm_regression_02(train_x, train_y, test_x, test_y, b1, b2, b, s, C);
-RMSE_List(x,:) = TestingAccuracy_RMSE;
+[TrainingAccuracy_RMSE,TestingAccuracy_RMSE,Training_time,Testing_time] = helm_regression_02(train_x, train_y, test_x, test_y, b1, b2, b, s, C);
+RMSE_Training(x,:) = TrainingAccuracy_RMSE;
+RMSE_Testing(x,:) = TestingAccuracy_RMSE;
 end
 
-AccList = horzcat(RMSE_List);
-headers = {'RMSE'};
+AccList = horzcat(RMSE_Training, RMSE_Testing);
+headers = {'Training', 'Testing'};
 
 csvwrite_with_headers(Result_File,AccList,headers)
