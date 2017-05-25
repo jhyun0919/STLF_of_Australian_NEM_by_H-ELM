@@ -1,26 +1,27 @@
-%load elm_input_data00.mat; Result_File='elm_optimal_result00.csv';
-%load elm_input_data01.mat; Result_File='elm_optimal_result01.csv';
-%load elm_input_data02.mat; Result_File='elm_optimal_result02.csv';
-load elm_input_data03.mat; Result_File='elm_optimal_result03.csv';
+%load 'input_data/elm_input_d.mat'; Result_File='optimal_data/elm_optimal_d.csv';
+%load 'input_data/elm_input_w.mat'; Result_File='optimal_data/elm_optimal_w.csv';
+load 'input_data/elm_input_dw.mat'; Result_File='optimal_data/elm_optimal_dw.csv';
 
 No_of_Output=48;
 NumberofHiddenNeurons=1;
 ActivationFunction='sig';
 
-AccList = [];
+RMSE_List = [];
+MAPE_List = [];
 
-for x = 1:200
-    Acctemp = [];
+for x = 1:300
+    RMSE_temp = [];
+    MAPE_temp = [];
     for xx = 1:20
-        [TrainingTime, TestingTime, TrainingAccuracy, TestingAccuracy] = ELM_MultiOutputRegression(train_x, train_y, test_x, test_y, No_of_Output, NumberofHiddenNeurons, ActivationFunction);
-        Acctemp(xx,:) = TestingAccuracy;
+        [TrainingTime, TestingTime, TrainingAccuracy_RMSE, TestingAccuracy_RMSE] = ELM_MultiOutputRegression(train_x, train_y, test_x, test_y, No_of_Output, NumberofHiddenNeurons, ActivationFunction);
+        RMSE_temp(xx,:) = TestingAccuracy_RMSE;
     end
     
-    AccList(x,:) = mean(Acctemp);
+    RMSE_List(x,:) = mean(RMSE_temp);
     NumberofHiddenNeurons = NumberofHiddenNeurons + 1;
     
 end
 
-headers = {'MAPE'};
-
+AccList = horzcat(RMSE_List);
+headers = {'RMSE'};
 csvwrite_with_headers(Result_File,AccList,headers)

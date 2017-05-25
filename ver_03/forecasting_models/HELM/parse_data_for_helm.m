@@ -1,9 +1,7 @@
-%TrainingData_File='elm_train00_data.csv';TestingData_File='elm_test00_data.csv'; FileName='helm_input_data00';
-%TrainingData_File='elm_train01_data.csv'; TestingData_File='elm_test01_data.csv'; FileName='helm_input_data01';
-%TrainingData_File='elm_train02_data.csv'; TestingData_File='elm_test02_data.csv'; FileName='helm_input_data02';
-TrainingData_File='elm_train03_data.csv'; TestingData_File='elm_test03_data.csv'; FileName='helm_input_data03';
-
+%TrainingData_File='csv_data/train_d.csv';TestingData_File='csv_data/test_d.csv'; FileName='input_data/helm_input_d';
+%TrainingData_File='csv_data/train_w.csv';TestingData_File='csv_data/test_w.csv'; FileName='input_data/helm_input_w';
+%TrainingData_File='csv_data/train_dw.csv';TestingData_File='csv_data/test_dw.csv'; FileName='input_data/helm_input_dw';
+TrainingData_File='csv_data/train.csv';TestingData_File='csv_data/test.csv'; FileName='input_data/helm_input';
 
 No_of_Output = 48;
-
 helm_parser(TrainingData_File, TestingData_File , No_of_Output, FileName);

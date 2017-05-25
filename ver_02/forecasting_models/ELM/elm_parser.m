@@ -1,4 +1,4 @@
-function [ output_args ] = elm_parser( TrainingData_File, TestingData_File , No_of_Output, FileName)
+function [ ] = elm_parser( TrainingData_File, TestingData_File , No_of_Output, FileName)
 
 %%%%%%%%%%% Load training dataset
 train_data=csvread(TrainingData_File);
@@ -22,7 +22,7 @@ clear test_data;                                    %   Release raw testing data
 
 
 
-save(FileName, 'train_x', 'train_y', 'test_x', 'test_y');
+save(FileName, train_x, train_y, test_x, test_y);
 
 
 end

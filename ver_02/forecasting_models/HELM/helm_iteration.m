@@ -11,7 +11,7 @@ N=N4+1;
 
 AccList = [];
 
-for x = 1:1000
+for x = 1:10
 x
 b1=2*rand(size(train_x',2)+1,N1)-1;
 b2=2*rand(N1+1,N2)-1;
@@ -32,6 +32,6 @@ AccList(x,:) = TestingAccuracy;
 
 end
 
-headers = {'MAPE'};
+headers = {'RMSE'};
 
 csvwrite_with_headers(Result_File,AccList,headers)
