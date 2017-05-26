@@ -284,6 +284,16 @@ class Numpy2Pandas:
         return data
 
     @staticmethod
+    def add_number_index(data):
+        data.index = range(1, len(data) + 1)
+        return data
+
+    @staticmethod
+    def acc_data2df(acc_data):
+        df = pd.DataFrame(acc_data, columns=['RMSE'])
+        return df
+
+    @staticmethod
     def load_data2df(load_data):
         """
         convert load numpy array to pandas data frame & add date index to given load numpy array

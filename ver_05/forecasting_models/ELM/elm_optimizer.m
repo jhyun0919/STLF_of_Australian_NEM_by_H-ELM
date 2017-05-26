@@ -1,7 +1,8 @@
 %load 'input_data/ACTEWAGL/elm_input_wd.mat'; Result_File='optimal_data/ACTEWAGL/elm_optimal_wd.csv';
 %load 'input_data/ACTEWAGL/elm_input_lwd.mat'; Result_File='optimal_data/ACTEWAGL/elm_optimal_lwd.csv';
+%load 'input_data/ACTEWAGL/elm_input_lww.mat'; Result_File='optimal_data/ACTEWAGL/elm_optimal_lww.csv';
 %load 'input_data/ACTEWAGL/elm_input_lwdw.mat'; Result_File='optimal_data/ACTEWAGL/elm_optimal_lwdw.csv';
-load 'input_data/ACTEWAGL/elm_input_lwdwp.mat'; Result_File='optimal_data/ACTEWAGL/elm_optimal_lwdwp.csv';
+
 
 
 No_of_Output=48;
