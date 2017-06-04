@@ -31,7 +31,12 @@ START_DATE = date(2006, 1, 1)
 WEATHER_DAILY = 'wd'
 LOAD_WEATHER_DAILY = 'lwd'
 LOAD_WEATHER_WEEKLY = 'lww'
-LOAD_WEATHER_DAILY_WEEKLY = 'lwdw'
+LOAD_WEATHER_DAILY_WEEKLY_1 = 'lwdw1'
+LOAD_WEATHER_DAILY_WEEKLY_2 = 'lwdw2'
+LOAD_WEATHER_DAILY_WEEKLY_3 = 'lwdw3'
+LOAD_WEATHER_DAILY_WEEKLY_4 = 'lwdw4'
+LOAD_WEATHER_DAILY_WEEKLY_5 = 'lwdw5'
+LOAD_WEATHER_DAILY_WEEKLY_6 = 'lwdw6'
 
 SAVE_PATH = '/Users/JH/Documents/GitHub/PowerForecast/ver_06/data/input_vector'
 
@@ -374,9 +379,29 @@ class DataAllocate:
                 train_input_vector = DataAllocate.Filter.filter_load_weather_weekly(train_load, train_weather)
                 test_input_vector = DataAllocate.Filter.filter_load_weather_weekly(test_load, test_weather)
                 return train_input_vector, test_input_vector
-            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY:
-                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather)
-                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather)
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_1:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 1)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 1)
+                return train_input_vector, test_input_vector
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_2:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 2)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 2)
+                return train_input_vector, test_input_vector
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_3:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 3)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 3)
+                return train_input_vector, test_input_vector
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_4:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 4)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 4)
+                return train_input_vector, test_input_vector
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_5:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 5)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 5)
+                return train_input_vector, test_input_vector
+            elif filter_type is LOAD_WEATHER_DAILY_WEEKLY_6:
+                train_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(train_load, train_weather, 6)
+                test_input_vector = DataAllocate.Filter.filter_load_weather_daily_weekly(test_load, test_weather, 6)
                 return train_input_vector, test_input_vector
 
             else:
@@ -399,10 +424,10 @@ class DataAllocate:
             """
             input_vector = list()
             for row in xrange(0, len(load_vector)):
-                feature = load_vector[row]
-                label = weather_vector[row]
+                label = load_vector[row]
+                feature = weather_vector[row]
 
-                input_vector.append(Preprocess.data_concatenate(feature, label))
+                input_vector.append(Preprocess.data_concatenate(label, feature))
             return np.array(input_vector)
 
         @staticmethod
@@ -422,10 +447,10 @@ class DataAllocate:
                 load_k_day_ago = load_vector[row - 1]
                 weather_k = weather_vector[row]
 
-                feature = load_k
-                label = Preprocess.data_concatenate(load_k_day_ago, weather_k)
+                label = load_k
+                feature = Preprocess.data_concatenate(load_k_day_ago, weather_k)
 
-                input_vector.append(Preprocess.data_concatenate(feature, label))
+                input_vector.append(Preprocess.data_concatenate(label, feature))
             return np.array(input_vector)
 
         @staticmethod
@@ -445,62 +470,45 @@ class DataAllocate:
                 load_k_week_ago = load_vector[row - 7]
                 weather_k = weather_vector[row]
 
-                feature = load_k
-                label = Preprocess.data_concatenate(load_k_week_ago, weather_k)
+                label = load_k
+                feature = Preprocess.data_concatenate(load_k_week_ago, weather_k)
 
-                input_vector.append(Preprocess.data_concatenate(feature, label))
+                input_vector.append(Preprocess.data_concatenate(label, feature))
             return np.array(input_vector)
 
         @staticmethod
-        def filter_load_weather_daily_weekly(load_vector, weather_vector):
+        def filter_load_weather_daily_weekly(load_vector, weather_vector, series_num):
             """
             set input label and feature vector as following
                 label = load(k)
                 feature = load(k-7), load(k-1), weather(k)
             :param load_vector: 
-            :param weather_vector: 
+            :param weather_vector:
+            :param series_num:
             :return: 
                 constructed input_vector
             """
             input_vector = list()
             for row in xrange(7, len(load_vector)):
                 load_k = load_vector[row]
-                load_k_day_ago = load_vector[row - 1]
-                load_k_week_ago = load_vector[row - 7]
-                weather_k = weather_vector[row]
+                for series_idx in xrange(1, series_num + 1):
+                    load_k_day_ago_temp = load_vector[row - 1 * series_idx]
+                    load_k_week_ago_temp = load_vector[row - 7 * series_idx]
+                    weather_k = weather_vector[row]
 
-                feature = load_k
-                label = Preprocess.data_concatenate(load_k_week_ago,
-                                                    Preprocess.data_concatenate(load_k_day_ago, weather_k))
+                    feature_temp_ = Preprocess.data_concatenate(
+                        Preprocess.data_concatenate(load_k_day_ago_temp, weather_k),
+                        Preprocess.data_concatenate(load_k_week_ago_temp, weather_k))
 
-                input_vector.append(Preprocess.data_concatenate(feature, label))
-            return np.array(input_vector)
+                    if series_idx == 1:
+                        feature_temp = feature_temp_
+                    else:
+                        feature_temp = Preprocess.data_concatenate(feature_temp, feature_temp_)
 
-        @staticmethod
-        def filter_load_weather_daily_weekly_powered(load_vector, weather_vector):
-            """
-            set input label and feature vector as following
-                label = load(k)
-                feature = load(k-7)^weather(k), load(k-1)^weather(k)
-            :param load_vector: 
-            :param weather_vector: 
-            :return:
-                constructed input_vector
-            """
-            input_vector = list()
-            for row in xrange(7, len(load_vector)):
-                load_k = load_vector[row]
-                load_k_day_ago = load_vector[row - 1]
-                load_k_week_ago = load_vector[row - 7]
-                weather_k = weather_vector[row]
+                label = load_k
+                feature = feature_temp
 
-                load_k_day_ago_powered = Preprocess.power_function(load_k_day_ago, weather_k)
-                load_k_week_ago_powered = Preprocess.power_function(load_k_week_ago, weather_k)
-
-                feature = load_k
-                label = Preprocess.data_concatenate(load_k_week_ago_powered, load_k_day_ago_powered)
-
-                input_vector.append(Preprocess.data_concatenate(feature, label))
+                input_vector.append(Preprocess.data_concatenate(label, feature))
             return np.array(input_vector)
 
 
@@ -542,9 +550,11 @@ class SaveData:
             :return: 
             """
             area_names = sorted(load_dict.iterkeys())
-            filter_list = [WEATHER_DAILY, LOAD_WEATHER_DAILY, LOAD_WEATHER_WEEKLY, LOAD_WEATHER_DAILY_WEEKLY]
+            filter_list = [WEATHER_DAILY, LOAD_WEATHER_DAILY, LOAD_WEATHER_WEEKLY, LOAD_WEATHER_DAILY_WEEKLY_1,
+                           LOAD_WEATHER_DAILY_WEEKLY_2, LOAD_WEATHER_DAILY_WEEKLY_3, LOAD_WEATHER_DAILY_WEEKLY_4,
+                           LOAD_WEATHER_DAILY_WEEKLY_5, LOAD_WEATHER_DAILY_WEEKLY_6]
             print 'saved files list :'
-            for file_idx in xrange(0, len(area_names)):
+            for file_idx in xrange(0, 1):
                 area = area_names[file_idx]
                 for filter_idx in xrange(0, len(filter_list)):
                     train_input_vector, test_input_vector = DataAllocate.STLF.allocator(load_dict[area], weather_vector,

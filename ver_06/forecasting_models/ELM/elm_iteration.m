@@ -1,7 +1,12 @@
 %load 'input_data/ACTEWAGL/elm_input_wd.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_wd.csv'; NumberofHiddenNeurons=52; 
 %load 'input_data/ACTEWAGL/elm_input_lwd.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwd.csv'; NumberofHiddenNeurons=178; 
 %load 'input_data/ACTEWAGL/elm_input_lww.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lww.csv'; NumberofHiddenNeurons=148; 
-load 'input_data/ACTEWAGL/elm_input_lwdw.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw.csv'; NumberofHiddenNeurons=167; 
+%load 'input_data/ACTEWAGL/elm_input_lwdw1.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw1.csv'; NumberofHiddenNeurons=167;
+%load 'input_data/ACTEWAGL/elm_input_lwdw2.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw2.csv'; NumberofHiddenNeurons=222;
+%load 'input_data/ACTEWAGL/elm_input_lwdw3.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw3.csv'; NumberofHiddenNeurons=242;
+%load 'input_data/ACTEWAGL/elm_input_lwdw4.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw4.csv'; NumberofHiddenNeurons=185;
+%load 'input_data/ACTEWAGL/elm_input_lwdw5.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw5.csv'; NumberofHiddenNeurons=245;
+%load 'input_data/ACTEWAGL/elm_input_lwdw6.mat'; Result_File='forecast_result/ACTEWAGL/elm_forecast_result_lwdw6.csv'; NumberofHiddenNeurons=237;
 
 
 
