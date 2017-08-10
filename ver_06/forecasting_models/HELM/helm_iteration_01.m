@@ -1,12 +1,7 @@
-%load 'input_data/ACTEWAGL/helm_input_wd.mat';Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_wd.csv'; NumberofHiddenNeurons=148;
+load 'input_data/ACTEWAGL/helm_input_wd.mat';Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_wd.csv'; NumberofHiddenNeurons=148;
 %load 'input_data/ACTEWAGL/helm_input_lwd.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwd.csv'; NumberofHiddenNeurons=208; 
 %load 'input_data/ACTEWAGL/helm_input_lww.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lww.csv'; NumberofHiddenNeurons=198; 
-%load 'input_data/ACTEWAGL/helm_input_lwdw1.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw1.csv'; NumberofHiddenNeurons=159;
-%load 'input_data/ACTEWAGL/helm_input_lwdw2.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw2.csv'; NumberofHiddenNeurons=159;
-%load 'input_data/ACTEWAGL/helm_input_lwdw3.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw3.csv'; NumberofHiddenNeurons=159;
-%load 'input_data/ACTEWAGL/helm_input_lwdw4.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw4.csv'; NumberofHiddenNeurons=159;
-%load 'input_data/ACTEWAGL/helm_input_lwdw5.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw5.csv'; NumberofHiddenNeurons=159;
-%load 'input_data/ACTEWAGL/helm_input_lwdw6.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw6.csv'; NumberofHiddenNeurons=159; 
+%load 'input_data/ACTEWAGL/helm_input_lwdw.mat'; Result_File='forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw.csv'; NumberofHiddenNeurons=159; 
  
 
 

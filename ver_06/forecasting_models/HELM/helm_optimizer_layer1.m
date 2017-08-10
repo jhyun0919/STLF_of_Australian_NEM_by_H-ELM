@@ -1,12 +1,7 @@
 %load 'input_data/ACTEWAGL/helm_input_wd.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_wd.csv';
 %load 'input_data/ACTEWAGL/helm_input_lwd.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwd.csv';
 %load 'input_data/ACTEWAGL/helm_input_lww.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lww.csv';
-%load 'input_data/ACTEWAGL/helm_input_lwdw1.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw1.csv';
-%load 'input_data/ACTEWAGL/helm_input_lwdw2.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw2.csv';
-%load 'input_data/ACTEWAGL/helm_input_lwdw3.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw3.csv';
-load 'input_data/ACTEWAGL/helm_input_lwdw4.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw4.csv';
-%load 'input_data/ACTEWAGL/helm_input_lwdw5.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw5.csv';
-%load 'input_data/ACTEWAGL/helm_input_lwdw6.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw6.csv';
+load 'input_data/ACTEWAGL/helm_input_lwdw.mat'; Result_File='optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw.csv';
 
 NumberofHiddenNeurons=1;
 ActivationFunction='sig';
@@ -16,11 +11,11 @@ RMSE_List = [];
 MAPE_List = [];
 MAE_List = [];
 
-for x = 1:500
+for x = 1:300
     RMSE_temp = [];
     MAPE_temp = [];
     MAE_temp = [];
-    for xx = 1:10
+    for xx = 1:20
     	x
     	N1=NumberofHiddenNeurons;
 		N=N1+1;

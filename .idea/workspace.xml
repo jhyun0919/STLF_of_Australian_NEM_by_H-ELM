@@ -2,18 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed71c56-8b3b-45d2-b06e-afb26b428e84" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/test_lwd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/test_lwdw.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/test_lww.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/test_wd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/train_lwd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/train_lwdw.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/train_lww.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/data/input_vector/STLF/ACTEWAGL/train_wd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ppt_slides/prepare_ELM2017_29MAY2017.pptx" afterPath="$PROJECT_DIR$/ppt_slides/prepare_ELM2017_29MAY2017.pptx" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/ELM2017/ELM2017-1st.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/forecast_result/ACTEWAGL/elm_forecast_result_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw1.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw2.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw3.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw4.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw5.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwdw6.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/optimal_data/ACTEWAGL/elm_optimal_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwdw6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/forecast_result/ACTEWAGL/layer1/helm_forecast_result_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw1.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw2.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw3.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw4.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw5.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/input_data/ACTEWAGL/helm_input_lwdw6.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/optimal_data/ACTEWAGL/layer1/helm_optimal_lwdw2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/results/04_00. helm_optimal_result_layer1.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/results/04_00. helm_optimal_result_layer2.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/results/04_01. helm_forecast_result_layer1.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ver_06/results/04_01. helm_forecast_result_layer2.ipynb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwd.mat" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lwd.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lww.mat" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_lww.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_wd.mat" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/input_data/ACTEWAGL/elm_input_wd.mat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwd.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/test_lwdw.csv" />
@@ -23,13 +70,25 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lwdw.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lww.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_lww.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_wd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/csv_data/ACTEWAGL/train_wd.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/elm_iteration.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/elm_iteration.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/elm_optimizer.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/elm_optimizer.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/parse_data_for_elm.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/ELM/parse_data_for_elm.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lwd.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lww.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_lww.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_wd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/test_wd.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lwd.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lww.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_lww.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_wd.csv" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/csv_data/ACTEWAGL/train_wd.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_iteration_01.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_iteration_01.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_iteration_02.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_iteration_02.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_optimizer_layer1.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_optimizer_layer1.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_optimizer_layer2.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/helm_optimizer_layer2.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/parse_data_for_helm.m" afterPath="$PROJECT_DIR$/ver_06/forecasting_models/HELM/parse_data_for_helm.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/results/.ipynb_checkpoints/03_00. elm_optimal_result-checkpoint.ipynb" afterPath="$PROJECT_DIR$/ver_06/results/.ipynb_checkpoints/03_00. elm_optimal_result-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/results/.ipynb_checkpoints/03_01. elm_forecast_result-checkpoint.ipynb" afterPath="$PROJECT_DIR$/ver_06/results/.ipynb_checkpoints/03_01. elm_forecast_result-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/results/02. data_preprocessing &amp; save_data.ipynb" afterPath="$PROJECT_DIR$/ver_06/results/02. data_preprocessing &amp; save_data.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/results/03_00. elm_optimal_result.ipynb" afterPath="$PROJECT_DIR$/ver_06/results/03_00. elm_optimal_result.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/results/03_01. elm_forecast_result.ipynb" afterPath="$PROJECT_DIR$/ver_06/results/03_01. elm_forecast_result.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver_06/util/app.py" afterPath="$PROJECT_DIR$/ver_06/util/app.py" />
     </list>
     <ignored path="PowerForecast.iws" />
@@ -97,22 +156,7 @@
     <favorites_list name="PowerForecast" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ver_06/util/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="479" column="81" lean-forward="false" selection-start-line="479" selection-start-column="81" selection-end-line="479" selection-end-column="81" />
-              <folding>
-                <element signature="e#2184#6047#0" expanded="false" />
-                <element signature="e#6069#8375#0" expanded="false" />
-                <element signature="e#8402#11497#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -271,7 +315,7 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -284,56 +328,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ver_06" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PowerForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ver_06" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -965,12 +960,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ver_06/util/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="479" column="81" lean-forward="false" selection-start-line="479" selection-start-column="81" selection-end-line="479" selection-end-column="81" />
+        <state relative-caret-position="414">
+          <caret line="297" column="0" lean-forward="true" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
           <folding>
-            <element signature="e#2184#6047#0" expanded="false" />
-            <element signature="e#6069#8375#0" expanded="false" />
-            <element signature="e#8402#11497#0" expanded="false" />
+            <marker date="1498906158000" expanded="true" signature="1986:4255" ph="..." />
+            <marker date="1498906158000" expanded="true" signature="19905:20071" ph="..." />
+            <marker date="1498906158000" expanded="true" signature="19905:20137" ph="..." />
           </folding>
         </state>
       </provider>
